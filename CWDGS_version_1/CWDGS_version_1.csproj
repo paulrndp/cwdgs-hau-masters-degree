@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39AA9DE0-1DAA-48C2-A34B-99A8FEA5EC76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CWDGS</RootNamespace>
+    <AssemblyName>CWDGS_version_1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CWDGS_version_1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Bungalow\Ceiling\frmCeiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Ceiling\frmCeiling.Designer.cs">
+      <DependentUpon>frmCeiling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Ceiling\frmPlywood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Ceiling\frmPlywood.Designer.cs">
+      <DependentUpon>frmPlywood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Ceiling\frmSteelFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Ceiling\frmSteelFrame.Designer.cs">
+      <DependentUpon>frmSteelFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_Door.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_Door.Designer.cs">
+      <DependentUpon>frm_Door.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_DoorLockSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_DoorLockSet.Designer.cs">
+      <DependentUpon>frm_DoorLockSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_Doors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Doors\frm_Doors.Designer.cs">
+      <DependentUpon>frm_Doors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Earthworks\frmEarthworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Earthworks\frmEarthworks.Designer.cs">
+      <DependentUpon>frmEarthworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Earthworks\frmSoilType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Earthworks\frmSoilType.Designer.cs">
+      <DependentUpon>frmSoilType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmEXC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmEXC.Designer.cs">
+      <DependentUpon>frmEXC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmFlooring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmFlooring.Designer.cs">
+      <DependentUpon>frmFlooring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Flooring\frmTB.Designer.cs">
+      <DependentUpon>frmTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmFormworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmFormworks.Designer.cs">
+      <DependentUpon>frmFormworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Beam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Beam.Designer.cs">
+      <DependentUpon>frmF_Beam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Column.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Column.Designer.cs">
+      <DependentUpon>frmF_Column.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_footings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_footings.Designer.cs">
+      <DependentUpon>frmF_footings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Slab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Formworks\frmF_Slab.Designer.cs">
+      <DependentUpon>frmF_Slab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Bungalow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Bungalow.designer.cs">
+      <DependentUpon>Bungalow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmExterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmExterior.Designer.cs">
+      <DependentUpon>frmExterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmInterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmInterior.Designer.cs">
+      <DependentUpon>frmInterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmMansoryWalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Masonry Walls\frmMansoryWalls.Designer.cs">
+      <DependentUpon>frmMansoryWalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmExtSkimCoat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmExtSkimCoat.Designer.cs">
+      <DependentUpon>frmExtSkimCoat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmIntSkimCoat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmIntSkimCoat.Designer.cs">
+      <DependentUpon>frmIntSkimCoat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPaintainWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPaintainWorks.Designer.cs">
+      <DependentUpon>frmPaintainWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPWs_Exterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPWs_Exterior.Designer.cs">
+      <DependentUpon>frmPWs_Exterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPWs_Interior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Painting Works\frmPWs_Interior.Designer.cs">
+      <DependentUpon>frmPWs_Interior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPlasteringWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPlasteringWorks.Designer.cs">
+      <DependentUpon>frmPlasteringWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPW_Exterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPW_Exterior.Designer.cs">
+      <DependentUpon>frmPW_Exterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPW_Interior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Plastering Works\frmPW_Interior.Designer.cs">
+      <DependentUpon>frmPW_Interior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRCC.Designer.cs">
+      <DependentUpon>frmRCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_beam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_beam.Designer.cs">
+      <DependentUpon>frmRR_beam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_clumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_clumn.Designer.cs">
+      <DependentUpon>frmRR_clumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_footings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_footings.Designer.cs">
+      <DependentUpon>frmRR_footings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_slab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_slab.Designer.cs">
+      <DependentUpon>frmRR_slab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmBeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmBeam.Designer.cs">
+      <DependentUpon>frmBeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmColumn.Designer.cs">
+      <DependentUpon>frmColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmFootings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmFootings.Designer.cs">
+      <DependentUpon>frmFootings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmSlab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmSlab.Designer.cs">
+      <DependentUpon>frmSlab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmSRW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmSRW.Designer.cs">
+      <DependentUpon>frmSRW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmWalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmWalls.Designer.cs">
+      <DependentUpon>frmWalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmWallsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bungalow\Steel Reinforcement Work\frmWallsType.Designer.cs">
+      <DependentUpon>frmWallsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_ceiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_ceiling.Designer.cs">
+      <DependentUpon>b_ceiling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\distribution_rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\distribution_rate.Designer.cs">
+      <DependentUpon>distribution_rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\distribution_rate_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\distribution_rate_error.Designer.cs">
+      <DependentUpon>distribution_rate_error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScope.Designer.cs">
+      <DependentUpon>frmScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\New\frmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\New\frmNew.Designer.cs">
+      <DependentUpon>frmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Projects\frmProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Projects\frmProjects.Designer.cs">
+      <DependentUpon>frmProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsCeiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsCeiling.Designer.cs">
+      <DependentUpon>tsCeiling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsPlywood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsPlywood.Designer.cs">
+      <DependentUpon>tsPlywood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsSteelFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Ceiling\tsSteelFrame.Designer.cs">
+      <DependentUpon>tsSteelFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_Door.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_Door.Designer.cs">
+      <DependentUpon>ts_Door.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_DoorLockSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_DoorLockSet.Designer.cs">
+      <DependentUpon>ts_DoorLockSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_Doors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Doors\ts_Doors.Designer.cs">
+      <DependentUpon>ts_Doors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Earthworks\tsEarthworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Earthworks\tsEarthworks.Designer.cs">
+      <DependentUpon>tsEarthworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Earthworks\tsSoilType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Earthworks\tsSoilType.Designer.cs">
+      <DependentUpon>tsSoilType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsEXC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsEXC.Designer.cs">
+      <DependentUpon>tsEXC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsFlooring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsFlooring.Designer.cs">
+      <DependentUpon>tsFlooring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Flooring\tsTB.Designer.cs">
+      <DependentUpon>tsTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsFormworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsFormworks.Designer.cs">
+      <DependentUpon>tsFormworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Beam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Beam.Designer.cs">
+      <DependentUpon>tsF_Beam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Beam_RB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Beam_RB.Designer.cs">
+      <DependentUpon>tsF_Beam_RB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Column.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Column.Designer.cs">
+      <DependentUpon>tsF_Column.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Column_SF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Column_SF.Designer.cs">
+      <DependentUpon>tsF_Column_SF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_footings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_footings.Designer.cs">
+      <DependentUpon>tsF_footings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Slab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\tsF_Slab.Designer.cs">
+      <DependentUpon>tsF_Slab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\ts_Staircase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Formworks\ts_Staircase.Designer.cs">
+      <DependentUpon>ts_Staircase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\frmTwoStory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\frmTwoStory.Designer.cs">
+      <DependentUpon>frmTwoStory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsExterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsExterior.Designer.cs">
+      <DependentUpon>tsExterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsInterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsInterior.Designer.cs">
+      <DependentUpon>tsInterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsInteriorGF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsInteriorGF.Designer.cs">
+      <DependentUpon>tsInteriorGF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsMansoryWalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\tsMansoryWalls.Designer.cs">
+      <DependentUpon>tsMansoryWalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\txExteriorGF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Masonry Walls\txExteriorGF.Designer.cs">
+      <DependentUpon>txExteriorGF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsExtSkimCoat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsExtSkimCoat.Designer.cs">
+      <DependentUpon>tsExtSkimCoat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsIntSkimCoat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsIntSkimCoat.Designer.cs">
+      <DependentUpon>tsIntSkimCoat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPaintainWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPaintainWorks.Designer.cs">
+      <DependentUpon>tsPaintainWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPWs_Exterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPWs_Exterior.Designer.cs">
+      <DependentUpon>tsPWs_Exterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPWs_Interior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Painting Works\tsPWs_Interior.Designer.cs">
+      <DependentUpon>tsPWs_Interior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPlasteringWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPlasteringWorks.Designer.cs">
+      <DependentUpon>tsPlasteringWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPW_Exterior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPW_Exterior.Designer.cs">
+      <DependentUpon>tsPW_Exterior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPW_Interior.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Plastering Works\tsPW_Interior.Designer.cs">
+      <DependentUpon>tsPW_Interior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRCC.Designer.cs">
+      <DependentUpon>tsRCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_beam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_beam.Designer.cs">
+      <DependentUpon>tsRR_beam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_clumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_clumn.Designer.cs">
+      <DependentUpon>tsRR_clumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_footings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_footings.Designer.cs">
+      <DependentUpon>tsRR_footings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_slab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_slab.Designer.cs">
+      <DependentUpon>tsRR_slab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_beam_rb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_beam_rb.Designer.cs">
+      <DependentUpon>ts_beam_rb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_column_sf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_column_sf.Designer.cs">
+      <DependentUpon>ts_column_sf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_slab_sf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_slab_sf.Designer.cs">
+      <DependentUpon>ts_slab_sf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_staircase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Reinforced Cement Concrete\ts_staircase.Designer.cs">
+      <DependentUpon>ts_staircase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsBeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsBeam.Designer.cs">
+      <DependentUpon>tsBeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsColumn.Designer.cs">
+      <DependentUpon>tsColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsFootings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsFootings.Designer.cs">
+      <DependentUpon>tsFootings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsSlab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsSlab.Designer.cs">
+      <DependentUpon>tsSlab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsSRW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsSRW.Designer.cs">
+      <DependentUpon>tsSRW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsStairCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsStairCase.Designer.cs">
+      <DependentUpon>tsStairCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsWalls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsWalls.Designer.cs">
+      <DependentUpon>tsWalls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsWallsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Two - Story\Steel Reinforcement Work\tsWallsType.Designer.cs">
+      <DependentUpon>tsWallsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_doors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_doors.Designer.cs">
+      <DependentUpon>b_doors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_earthworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_earthworks.Designer.cs">
+      <DependentUpon>b_earthworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_flooring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_flooring.Designer.cs">
+      <DependentUpon>b_flooring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_formworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_formworks.Designer.cs">
+      <DependentUpon>b_formworks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_mansory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_mansory.Designer.cs">
+      <DependentUpon>b_mansory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_painting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_painting.Designer.cs">
+      <DependentUpon>b_painting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_plastering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_plastering.Designer.cs">
+      <DependentUpon>b_plastering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_reinforced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_reinforced.Designer.cs">
+      <DependentUpon>b_reinforced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Units\b_steel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Units\b_steel.Designer.cs">
+      <DependentUpon>b_steel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Bungalow\Ceiling\frmCeiling.resx">
+      <DependentUpon>frmCeiling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Ceiling\frmPlywood.resx">
+      <DependentUpon>frmPlywood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Ceiling\frmSteelFrame.resx">
+      <DependentUpon>frmSteelFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Doors\frm_Door.resx">
+      <DependentUpon>frm_Door.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Doors\frm_DoorLockSet.resx">
+      <DependentUpon>frm_DoorLockSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Doors\frm_Doors.resx">
+      <DependentUpon>frm_Doors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Earthworks\frmEarthworks.resx">
+      <DependentUpon>frmEarthworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Earthworks\frmSoilType.resx">
+      <DependentUpon>frmSoilType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Flooring\frmEXC.resx">
+      <DependentUpon>frmEXC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Flooring\frmFlooring.resx">
+      <DependentUpon>frmFlooring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Flooring\frmTB.resx">
+      <DependentUpon>frmTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Formworks\frmFormworks.resx">
+      <DependentUpon>frmFormworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Formworks\frmF_Beam.resx">
+      <DependentUpon>frmF_Beam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Formworks\frmF_Column.resx">
+      <DependentUpon>frmF_Column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Formworks\frmF_footings.resx">
+      <DependentUpon>frmF_footings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Formworks\frmF_Slab.resx">
+      <DependentUpon>frmF_Slab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Bungalow.resx">
+      <DependentUpon>Bungalow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Masonry Walls\frmExterior.resx">
+      <DependentUpon>frmExterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Masonry Walls\frmInterior.resx">
+      <DependentUpon>frmInterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Masonry Walls\frmMansoryWalls.resx">
+      <DependentUpon>frmMansoryWalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Painting Works\frmExtSkimCoat.resx">
+      <DependentUpon>frmExtSkimCoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Painting Works\frmIntSkimCoat.resx">
+      <DependentUpon>frmIntSkimCoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Painting Works\frmPaintainWorks.resx">
+      <DependentUpon>frmPaintainWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Painting Works\frmPWs_Exterior.resx">
+      <DependentUpon>frmPWs_Exterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Painting Works\frmPWs_Interior.resx">
+      <DependentUpon>frmPWs_Interior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Plastering Works\frmPlasteringWorks.resx">
+      <DependentUpon>frmPlasteringWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Plastering Works\frmPW_Exterior.resx">
+      <DependentUpon>frmPW_Exterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Plastering Works\frmPW_Interior.resx">
+      <DependentUpon>frmPW_Interior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Reinforced Cement Concrete\frmRCC.resx">
+      <DependentUpon>frmRCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_beam.resx">
+      <DependentUpon>frmRR_beam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_clumn.resx">
+      <DependentUpon>frmRR_clumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_footings.resx">
+      <DependentUpon>frmRR_footings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Reinforced Cement Concrete\frmRR_slab.resx">
+      <DependentUpon>frmRR_slab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmBeam.resx">
+      <DependentUpon>frmBeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmColumn.resx">
+      <DependentUpon>frmColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmFootings.resx">
+      <DependentUpon>frmFootings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmSlab.resx">
+      <DependentUpon>frmSlab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmSRW.resx">
+      <DependentUpon>frmSRW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmWalls.resx">
+      <DependentUpon>frmWalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bungalow\Steel Reinforcement Work\frmWallsType.resx">
+      <DependentUpon>frmWallsType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_ceiling.resx">
+      <DependentUpon>b_ceiling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\distribution_rate.resx">
+      <DependentUpon>distribution_rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\distribution_rate_error.resx">
+      <DependentUpon>distribution_rate_error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScope.resx">
+      <DependentUpon>frmScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\New\frmNew.resx">
+      <DependentUpon>frmNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Projects\frmProjects.resx">
+      <DependentUpon>frmProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Ceiling\tsCeiling.resx">
+      <DependentUpon>tsCeiling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Ceiling\tsPlywood.resx">
+      <DependentUpon>tsPlywood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Ceiling\tsSteelFrame.resx">
+      <DependentUpon>tsSteelFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Doors\ts_Door.resx">
+      <DependentUpon>ts_Door.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Doors\ts_DoorLockSet.resx">
+      <DependentUpon>ts_DoorLockSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Doors\ts_Doors.resx">
+      <DependentUpon>ts_Doors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Earthworks\tsEarthworks.resx">
+      <DependentUpon>tsEarthworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Earthworks\tsSoilType.resx">
+      <DependentUpon>tsSoilType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Flooring\tsEXC.resx">
+      <DependentUpon>tsEXC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Flooring\tsFlooring.resx">
+      <DependentUpon>tsFlooring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Flooring\tsTB.resx">
+      <DependentUpon>tsTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Formworks\tsFormworks.resx">
+      <DependentUpon>tsFormworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Formworks\tsF_Beam_RB.resx">
+      <DependentUpon>tsF_Beam_RB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Formworks\tsF_Column.resx">
+      <DependentUpon>tsF_Column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Formworks\tsF_Column_SF.resx">
+      <DependentUpon>tsF_Column_SF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Formworks\ts_Staircase.resx">
+      <DependentUpon>ts_Staircase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\frmTwoStory.resx">
+      <DependentUpon>frmTwoStory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Masonry Walls\tsExterior.resx">
+      <DependentUpon>tsExterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Masonry Walls\tsInterior.resx">
+      <DependentUpon>tsInterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Masonry Walls\tsInteriorGF.resx">
+      <DependentUpon>tsInteriorGF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Masonry Walls\tsMansoryWalls.resx">
+      <DependentUpon>tsMansoryWalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Masonry Walls\txExteriorGF.resx">
+      <DependentUpon>txExteriorGF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Painting Works\tsExtSkimCoat.resx">
+      <DependentUpon>tsExtSkimCoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Painting Works\tsIntSkimCoat.resx">
+      <DependentUpon>tsIntSkimCoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Painting Works\tsPaintainWorks.resx">
+      <DependentUpon>tsPaintainWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Painting Works\tsPWs_Exterior.resx">
+      <DependentUpon>tsPWs_Exterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Painting Works\tsPWs_Interior.resx">
+      <DependentUpon>tsPWs_Interior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Plastering Works\tsPlasteringWorks.resx">
+      <DependentUpon>tsPlasteringWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Plastering Works\tsPW_Exterior.resx">
+      <DependentUpon>tsPW_Exterior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Plastering Works\tsPW_Interior.resx">
+      <DependentUpon>tsPW_Interior.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\tsRCC.resx">
+      <DependentUpon>tsRCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_beam.resx">
+      <DependentUpon>tsRR_beam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_clumn.resx">
+      <DependentUpon>tsRR_clumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_footings.resx">
+      <DependentUpon>tsRR_footings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\tsRR_slab.resx">
+      <DependentUpon>tsRR_slab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\ts_beam_rb.resx">
+      <DependentUpon>ts_beam_rb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\ts_column_sf.resx">
+      <DependentUpon>ts_column_sf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\ts_slab_sf.resx">
+      <DependentUpon>ts_slab_sf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Reinforced Cement Concrete\ts_staircase.resx">
+      <DependentUpon>ts_staircase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsBeam.resx">
+      <DependentUpon>tsBeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsColumn.resx">
+      <DependentUpon>tsColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsFootings.resx">
+      <DependentUpon>tsFootings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsSlab.resx">
+      <DependentUpon>tsSlab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsSRW.resx">
+      <DependentUpon>tsSRW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsStairCase.resx">
+      <DependentUpon>tsStairCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsWalls.resx">
+      <DependentUpon>tsWalls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Two - Story\Steel Reinforcement Work\tsWallsType.resx">
+      <DependentUpon>tsWallsType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_doors.resx">
+      <DependentUpon>b_doors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_earthworks.resx">
+      <DependentUpon>b_earthworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_flooring.resx">
+      <DependentUpon>b_flooring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_formworks.resx">
+      <DependentUpon>b_formworks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_mansory.resx">
+      <DependentUpon>b_mansory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_painting.resx">
+      <DependentUpon>b_painting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_plastering.resx">
+      <DependentUpon>b_plastering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_reinforced.resx">
+      <DependentUpon>b_reinforced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Units\b_steel.resx">
+      <DependentUpon>b_steel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Revenue.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bungalow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="img\steel_frame.png" />
+    <None Include="img\door.png" />
+    <None Include="img\paint-bucket.png" />
+    <None Include="img\plastering.png" />
+    <None Include="img\floor.png" />
+    <None Include="img\sketch.png" />
+    <None Include="img\home-2.png" />
+    <None Include="img\roof.png" />
+    <None Include="img\cement-truck.png" />
+    <None Include="img\mansory.png" />
+    <None Include="img\steel.png" />
+    <None Include="img\hammering.png" />
+    <None Include="img\excavator-2.png" />
+    <None Include="img\icons\mansory.png" />
+    <None Include="img\icons\bracket.png" />
+    <None Include="img\icons\trowel.png" />
+    <None Include="img\icons\paint-roller.png" />
+    <None Include="img\icons\beam.png" />
+    <None Include="img\icons\floor.png" />
+    <None Include="img\icons\concrete-mixer.png" />
+    <None Include="img\icons\door.png" />
+    <None Include="img\icons\door.ico" />
+    <None Include="img\man-silhouette-touching-ceiling.png" />
+    <None Include="img\icons\beam.ico" />
+    <None Include="img\icons\ceiling.ico" />
+    <None Include="img\measure.png" />
+    <None Include="img\tape-measure.png" />
+    <None Include="img\iconfinder_corner_ruler_1297578.png" />
+    <None Include="img\warning.png" />
+    <None Include="img\info.png" />
+    <None Include="img\peso.png" />
+    <None Include="img\worker.png" />
+    <None Include="img\crowd.png" />
+    <None Include="img\trash.png" />
+    <None Include="Resources\round_swap_vert_white_24dp.png" />
+    <None Include="Resources\round_report_problem_white_24dp.png" />
+    <None Include="Resources\round_http_white_24dp.png" />
+    <None Include="Resources\round_gps_fixed_white_24dp.png" />
+    <None Include="Resources\round_build_white_24dp.png" />
+    <None Include="Resources\round_bookmark_white_24dp.png" />
+    <None Include="Resources\round_bluetooth_white_24dp.png" />
+    <None Include="Resources\round_backup_white_24dp.png" />
+    <None Include="Resources\round_assessment_white_24dp.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\baseline_thumb_up_black_24dp.png" />
+    <None Include="Resources\baseline_fingerprint_black_24dp.png" />
+    <None Include="Resources\baseline_favorite_border_black_24dp.png" />
+    <None Include="Resources\baseline_build_black_24dp.png" />
+    <None Include="Resources\baseline_bluetooth_black_24dp.png" />
+    <None Include="img\iconfinder_download_box_blue_61591.png" />
+    <None Include="img\iconfinder_plus_add_green_61658.png" />
+    <None Include="img\builder.png" />
+    <None Include="img\2-story.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
